@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practice_app/screen_model.dart';
+import 'package:practice_app/user_information.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
@@ -29,7 +30,10 @@ class HomePage extends StatelessWidget {
                     'ボタン',
                     style: TextStyle(fontSize: 15.0),
                   ),
-                  onPressed: () => model.changName(),
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => UserInformation()),
+                  ),
                 )
               ],
             ),
