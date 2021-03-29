@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
                     style: TextStyle(fontSize: 20.0),
                   ),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   child: Text(
                     'ボタン',
                     style: TextStyle(fontSize: 15.0),
