@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:practice_app/prezentation/users/user_information.dart';
+import 'package:practice_app/login/login_page.dart';
 import 'package:practice_app/screen/home_model.dart';
+import 'package:practice_app/signup/signup_page.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
@@ -27,14 +28,24 @@ class HomePage extends StatelessWidget {
                 ),
                 ElevatedButton(
                   child: Text(
-                    'ボタン',
+                    '新規登録',
                     style: TextStyle(fontSize: 15.0),
                   ),
                   onPressed: () => Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => UserInformation()),
+                    MaterialPageRoute(builder: (context) => SignupPage()),
                   ),
-                )
+                ),
+                ElevatedButton(
+                  child: Text(
+                    'ログイン',
+                    style: TextStyle(fontSize: 15.0),
+                  ),
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => LoginPage()),
+                  ),
+                ),
               ],
             ),
           );
