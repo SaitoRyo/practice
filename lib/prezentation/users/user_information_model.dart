@@ -11,4 +11,11 @@ class UserInformationModel extends ChangeNotifier {
     this.users = users;
     notifyListeners();
   }
+
+  Future deleteUser(User user) async {
+    await FirebaseFirestore.instance
+        .collection('users')
+        .doc(user.documentID)
+        .delete();
+  }
 }
