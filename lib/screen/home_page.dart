@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:practice_app/screen_model.dart';
-import 'package:practice_app/user_information.dart';
+import 'package:practice_app/prezentation/users/user_information.dart';
+import 'package:practice_app/screen/home_model.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
